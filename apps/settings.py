@@ -37,6 +37,20 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    # django rest-framework
+    'rest_framework',
+    # wallet
+    'wallet_models.apps.WalletConfig',
+    # items
+    'store_item_models.store_items.apps.StoreItemConfig',
+    'store_item_models.store_item_stocks.apps.StoreItemStockConfig',
+    'store_item_models.store_item_suppliers.apps.StoreItemSupplierConfig',
+    'store_item_models.store_item_purchases.apps.StoreItemPurchaseConfig',
+    'store_item_models.store_item_uses.apps.StoreItemUseConfig',
+    # Clean-Up
+    'django_cleanup.apps.CleanupConfig',  # should go after your apps
+    # Filter
+    'django_admin_listfilter_dropdown',
 ]
 
 MIDDLEWARE = [
