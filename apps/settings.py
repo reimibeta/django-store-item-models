@@ -47,6 +47,9 @@ INSTALLED_APPS = [
     'store_item_models.store_item_suppliers.apps.StoreItemSupplierConfig',
     'store_item_models.store_item_purchases.apps.StoreItemPurchaseConfig',
     'store_item_models.store_item_uses.apps.StoreItemUseConfig',
+    # staff
+    'staff_models.staffs.apps.StaffConfig',
+    'staff_models.staff_groups.apps.StaffGroupConfig',
     # Clean-Up
     'django_cleanup.apps.CleanupConfig',  # should go after your apps
     # Filter

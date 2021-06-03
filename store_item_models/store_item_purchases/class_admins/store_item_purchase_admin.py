@@ -2,7 +2,10 @@ from django.contrib import admin
 from django_admin_listfilter_dropdown.filters import RelatedDropdownFilter, DropdownFilter
 from html_render_utils.html_render import HtmlRender
 
-from store_item_models.store_item_purchases.class_admins.store_item_purchase_stock_admin import StoreItemPurchaseStockAdminInline
+from store_item_models.store_item_purchases.class_admins.store_item_purchase_delivery_admin import \
+    StoreItemPurchaseDeliveryAdminInline
+from store_item_models.store_item_purchases.class_admins.store_item_purchase_stock_admin import \
+    StoreItemPurchaseStockAdminInline
 from store_item_models.store_item_purchases.class_models.store_item_purchase import StoreItemPurchase
 from store_item_models.store_item_purchases.class_models.store_item_purchase_stock import StoreItemPurchaseStock
 
@@ -55,6 +58,7 @@ class StoreItemPurchaseAdmin(admin.ModelAdmin):
     )
     inlines = [
         StoreItemPurchaseStockAdminInline,
+        StoreItemPurchaseDeliveryAdminInline,
     ]
     # search_fields = [
     #     'product_supply_stock__stock__product__name'
