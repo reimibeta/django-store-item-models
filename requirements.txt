@@ -1,13 +1,18 @@
-datetime-utils @ git+https://github.com/reimibeta/django-datetime-utils.git@545cd2e124497406647b538a3a371549aaca4b8c
+asgiref==3.3.4
 Django==3.1.7
 django-admin-list-filter-dropdown==1.0.3
 django-cleanup==5.2.0
+django-datetime @ git+https://github.com/reimibeta/django-datetime.git@d296be9078c47baa763d0732b5cd56f1962bc50f
+django-html-render @ git+https://github.com/reimibeta/django-html-render.git@03de9608e80fd65bdbce4dbfa6dd7b5f555895a0
+django-image @ git+https://github.com/reimibeta/django-image.git@ddfe248768f935947e61f4b8be17deaf64b6a09d
+django-rest-framework @ git+https://github.com/reimibeta/django-rest-framework.git@503852d3fda3717b0de0932a216d27caa668e743
+django-stock @ git+https://github.com/reimibeta/django-stock.git@c545e0dd5e2f40462c70e19e58cad9db08e89dc8
 djangorestframework==3.12.4
 djangorestframework-simplejwt==4.7.0
 drf-flex-fields==0.9.0
-html-render-utils @ git+https://github.com/reimibeta/django-html-render-utils.git@9235f40df07a1d63f2573837718db4ef31efe7eb
-image-utils @ git+https://github.com/reimibeta/django-image-utils.git@145c80c2a8de0ac59c648671e3242578b6efbc7d
 Pillow==8.2.0
-rest-framework-utils @ git+https://github.com/reimibeta/django-rest-framework-utils.git@b7ec67b0138d1a8277f3418edadc5451aa7a41c4
-stock-algorithms @ git+https://github.com/reimibeta/django-stock-utils.git@af1291decd5f2e2e0387a57186dff2335b026836
-wallet-models @ git+https://github.com/reimibeta/django-wallet-models.git@bff0385071659f121f3d7ce5be48bfa93af4a4c4
+PyJWT==2.1.0
+pytz==2021.1
+sqlparse==0.4.1
+staff-models @ git+https://github.com/reimibeta/django-staff-models.git@d83512afb13d60719ba328961159c40bda1f7227
+wallet-models @ git+https://github.com/reimibeta/django-wallet-models.git@cb21dc69955ca23e7d7708d1034d55ff3a2c8ca8

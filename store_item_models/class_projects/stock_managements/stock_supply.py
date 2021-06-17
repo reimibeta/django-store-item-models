@@ -1,4 +1,4 @@
-from stock_algorithms.stock_algorithm import StockAlgorithm
+from django_stock.stock_algorithm import StockAlgorithm
 
 
 class StockSupply:

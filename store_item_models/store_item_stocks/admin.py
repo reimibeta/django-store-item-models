@@ -1,6 +1,6 @@
 from django.contrib import admin
 from django_admin_listfilter_dropdown.filters import DropdownFilter, RelatedDropdownFilter
-from image_utils.renders.render_image import render_image
+from django_image.renders.render_image import render_image
 
 from store_item_models.store_item_stocks.models import StoreItemStock
 from store_item_models.store_items.class_models.store_item import StoreItem

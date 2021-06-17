@@ -1,13 +1,13 @@
 from decimal import Decimal
 from enum import Enum
 
-from datetime_utils.date_time import DateTime
+from django_datetime.datetime import datetime
 from django.db import models
 from django.db.models.signals import post_save, pre_save, pre_delete
 from django.dispatch import receiver
 from staff_models.staff_groups.class_models.staff_deliver import StaffDeliver
 from wallet_models.class_models.wallet import Wallet
-from wallet_models.class_projects.balances.outlets.balance_outlet_condition import balance_outlet_condition
+from wallet_models.class_apps.balances.outlets.balance_outlet_condition import balance_outlet_condition
 
 from store_item_models.store_item_purchases.class_models.store_item_purchase import StoreItemPurchase
 
@@ -50,7 +50,7 @@ class StoreItemPurchaseDelivery(models.Model):
     deliver = models.ForeignKey(StaffDeliver, on_delete=models.CASCADE)
     quantity = models.IntegerField(default=0)
     cost_delivery = models.DecimalField(max_digits=20, decimal_places=2, default=Decimal(0.00))
-    delivery_date = models.DateTimeField(default=DateTime.datetimenow)
+    delivery_date = models.DateTimeField(default=datetime.dnow())
     arrived_date = models.DateTimeField(null=True, blank=True)
     payment_status = models.CharField(
         choices=PaymentStatusChoice.choices(),

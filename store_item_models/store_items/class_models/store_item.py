@@ -1,6 +1,6 @@
 from decimal import Decimal
 
-from datetime_utils.date_time import DateTime
+from django_datetime.datetime import datetime
 from django.db import models
 from django.db.models.signals import pre_save
 from django.dispatch import receiver
@@ -8,7 +8,7 @@ from django.dispatch import receiver
 
 class StoreItem(models.Model):
     name = models.CharField(max_length=255, unique=True)
-    created_date = models.DateField(default=DateTime.datenow)
+    created_date = models.DateField(default=datetime.dnow())
     updated_date = models.DateField(blank=True, null=True)
     is_active = models.BooleanField(default=True)
 
@@ -24,4 +24,4 @@ def update(sender, instance, **kwargs):
     if instance is None:
         pass
     else:
-        instance.updated_date = DateTime.datenow()
+        instance.updated_date = datetime.dnow()

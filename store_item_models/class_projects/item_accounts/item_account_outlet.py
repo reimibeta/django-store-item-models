@@ -1,4 +1,4 @@
-from wallet_models.class_projects.balances.outlets.balance_outlet_condition import balance_outlet_condition
+from wallet_models.class_apps.balances.outlets.balance_outlet_condition import balance_outlet_condition
 
 
 class ItemAccountOutlet:

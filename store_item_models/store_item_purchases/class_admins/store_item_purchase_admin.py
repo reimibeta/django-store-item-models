@@ -1,6 +1,6 @@
 from django.contrib import admin
 from django_admin_listfilter_dropdown.filters import RelatedDropdownFilter, DropdownFilter
-from html_render_utils.html_render import HtmlRender
+from django_html_render.html_render import HtmlRender
 
 from store_item_models.store_item_purchases.class_admins.store_item_purchase_delivery_admin import \
     StoreItemPurchaseDeliveryAdminInline

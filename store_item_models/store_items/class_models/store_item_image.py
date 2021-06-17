@@ -1,7 +1,7 @@
 from uuid import uuid4
 
 from django.db import models
-from image_utils.compress.compress_image import compress_image
+from django_image.compress.compress_image import compress_image
 
 from store_item_models.store_items.class_models.store_item import StoreItem
 
