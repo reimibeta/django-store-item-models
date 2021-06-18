@@ -11,6 +11,6 @@ import setuptools
 
 setuptools.setup(
     name='store_item_models',
-    version='1.0.1',
+    version='1.0.2',
     packages=setuptools.find_packages(),
 )
